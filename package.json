@@ -1,0 +1,32 @@
+{
+  "name": "antipodes",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://oew1v07@github.com/oew1v07/antipodes.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oew1v07/antipodes/issues"
+  },
+  "homepage": "https://github.com/oew1v07/antipodes#readme",
+  "devDependencies": {
+    "webpack": "^4.4.1",
+    "webpack-cli": "^2.0.13"
+  },
+  "dependencies": {
+    "@turf/distance": "^6.0.0",
+    "@turf/helpers": "^6.1.1",
+    "@turf/turf": "^5.1.6",
+    "lodash": "^4.17.5",
+    "turf": "^3.0.14"
+  }
+}
