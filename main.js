@@ -37,6 +37,17 @@ function createMarkerFromTurf(turfPoint, colour) {
 	return marker;
 }
 
+function createLineFromPointsTurf(fromPoint, toPoint, colour) {
+	var latlngs = [
+		[fromPoint.geometry.coordinates[1], fromPoint.geometry.coordinates[0]],
+		[toPoint.geometry.coordinates[1], toPoint.geometry.coordinates[0]]
+	];
+
+	var polyline = L.polyline(latlngs, {color: colour});
+
+	return polyline;
+}
+
 function onMapClick(e) {
 	// Create a marker where we clicked
     var marker = L.marker(e.latlng).addTo(mymap);
@@ -48,6 +59,7 @@ function onMapClick(e) {
     var destination = calcAntipodes(centroid, from_loc);
 
     createMarkerFromTurf(destination, 'blue').addTo(mymap);
+    createLineFromPointsTurf(from_loc, destination, 'red').addTo(mymap);
 }
 
 var mymap = initMap();
