@@ -1,0 +1,10 @@
+Colours for lines automatically looping through
+Colours for markers automatically looping through (matching lines, obvs)
+Making centroid customisable
+Zooming to fit line
+Button to clear all points
+Clicking on marker provides actual lat long
+Preset list of centroids, including London, Southampton, (0,0) degrees
+Nice rest of web page with header, footer, contact info, links etc
+Displaying distance (to either centroid or antipodes)
+Search bar for map
